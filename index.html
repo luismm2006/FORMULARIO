@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/css.css">
+</head>
+<body>
+    <h1>Formulario Inscripción alumnado Dual</h1>
+    <div>
+    <form action="/registrocorrecto.html" method="get">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" id="Nombre" required placeholder="Introduce tú nombre" class="inputSombras"><br><br>
+            <label for="Apellido">Apellido</label>
+            <input type="text" name="Apellido" id="Apellido" required placeholder="Introduce tú apellido" class="inputSombras"><br><br>
+            <label for="Edad">Edad</label>
+            <input type="text" name="Edad" id="Edad" placeholder="Introduce tú edad" class="inputSombras"><br><br>
+            <label for="Sexo">Sexo</label> <br>
+            <input type="radio" name="Sexo" id="Masculino" checked>
+            <label for="">Masculino</label><br>
+            <input type="radio" name="Sexo" id="Femenino">
+            <label for="">Femenino</label><br>
+            <input type="radio" name="Sexo" id="No binario">
+            <label for="">No binario</label>    
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Otros</legend>
+            <label for="Provincia">Provincia</label>
+            <select name="Provincia" id="Provincia" class="inputSombras">
+                <option value="Sevilla" selected>Sevilla</option>
+                <option value="Cádiz">Cádiz</option>
+                <option value="Almería">Almería</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Jaén">Jaén</option>
+                <option value="Granada">Granada</option>
+                <option value="Almería">Almería</option>
+                <option value="Huelva">Huelva</option>
+                <option value="Málaga">Málaga</option>
+            </select><br><br>
+            <label for="">Curriculum</label>
+            <input type="file" name="Curriculum" id="Curriculum" class="inputSombras"><br><br>
+            <label for="">Observaciones</label><br>
+            <textarea name="Observaciones" id="Observaciones" class="inputSombras"></textarea>
+        </fieldset><br>
+        <input type="submit" value="Enviar" class="inputSombras">
+    </form>
+    </div>
+</body>
+</html>
